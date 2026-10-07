@@ -1,0 +1,17 @@
+@tailwind base; @tailwind components; @tailwind utilities;
+html{scroll-behavior:smooth;background:#0A0A0A}
+body{@apply bg-ink text-cream font-sans antialiased;background-image:repeating-linear-gradient(115deg,transparent 0 38px,rgba(224,32,26,.035) 38px 39px)}
+::selection{background:#E0201A;color:#fff}
+.card{position:relative;overflow:hidden;border-radius:18px;background:#141414;border:1px solid rgba(255,255,255,.07);transition:border-color .3s,transform .3s}
+.card::before{content:"";position:absolute;inset:0;opacity:0;transition:opacity .3s;background:radial-gradient(420px circle at var(--x,50%) var(--y,50%),rgba(224,32,26,.22),transparent 60%);pointer-events:none}
+.card:hover{border-color:rgba(224,32,26,.55);transform:translateY(-4px)}
+.card:hover::before{opacity:1}
+.btn{@apply relative inline-flex items-center justify-center gap-2 rounded-xl px-7 py-3.5 font-display text-lg uppercase tracking-wide transition-all duration-300;}
+.btn-red{background:linear-gradient(135deg,#E0201A,#a3130f);box-shadow:0 10px 30px -8px rgba(224,32,26,.7)}
+.btn-red:hover{transform:translateY(-2px) scale(1.03);box-shadow:0 0 0 6px rgba(224,32,26,.18),0 16px 40px -8px rgba(224,32,26,.9)}
+.btn-ghost{border:1px solid rgba(255,255,255,.18);background:rgba(255,255,255,.03)}
+.btn-ghost:hover{border-color:#E0201A;background:rgba(224,32,26,.1)}
+.h-display{@apply font-display uppercase leading-[.92] tracking-tight}
+.text-stroke{-webkit-text-stroke:1.5px rgba(245,245,242,.35);color:transparent}
+.text-stroke-white{-webkit-text-stroke:1px rgba(255,255,255,0.9);color:transparent}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
