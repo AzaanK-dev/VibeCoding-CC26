@@ -3,7 +3,7 @@ import { AnimatePresence, motion } from "framer-motion";
 import { useNow } from "@/lib/phase";
 function Unit({ v, l }: { v: number; l: string }) {
   const s = String(v).padStart(2, "0");
-  return <div className="card px-2 py-5 text-center sm:px-8 sm:py-7"><div className="relative h-16 overflow-hidden sm:h-24"><AnimatePresence mode="popLayout"><motion.span key={s} initial={{ y: "100%", opacity: 0 }} animate={{ y: 0, opacity: 1 }} exit={{ y: "-100%", opacity: 0 }} transition={{ duration: .35 }} className="block font-display text-6xl leading-none sm:text-8xl">{s}</motion.span></AnimatePresence></div><div className="mt-2 font-mono text-xs text-brand">{l}</div></div>;
+  return <div className="count-down px-2 py-5 text-center sm:px-8 sm:py-7"><div className="relative h-16 overflow-hidden sm:h-24"><AnimatePresence mode="popLayout"><motion.span key={s} initial={{ y: "100%", opacity: 0 }} animate={{ y: 0, opacity: 1 }} exit={{ y: "-100%", opacity: 0 }} transition={{ duration: .35 }} className="block font-display text-6xl leading-none sm:text-8xl">{s}</motion.span></AnimatePresence></div><div className="mt-2 font-mono text-xs text-brand">{l}</div></div>;
 }
 export default function Countdown({ target }: { target: string }) {
   const now = useNow(); const diff = Math.max(0, +new Date(target) - (now ?? +new Date(target)));

@@ -130,9 +130,9 @@ export const steps = [
 ];
 export const timeline = [
   { d: "Before deadline", t: "Shortlisting", s: "Shortlisted teams are published." },
-  { d: "Payment window", t: "Payment", s: "Send screenshot on WhatsApp. Verified manually." },
+  { d: "Payment window", t: "Payment", s: "Follow the payment instructions sent to your email." },
   { d: "17 – 18 Oct", t: "Competition", s: "Problems unlock. The timer runs." },
-  { d: "After evaluation", t: "Top 10", s: "The best ten teams are announced." },
+  { d: "After evaluation", t: "Top 12", s: "The best twelve teams are announced." },
   { d: "22 Oct", t: "Final pitch", s: "Live pitching and the Grand Prize." },
 ];
 export const rules = [

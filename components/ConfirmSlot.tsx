@@ -31,10 +31,10 @@ export default function ConfirmSlot({ wa }: { wa: string }) {
             <p className="font-mono text-xs text-brand">Action required · shortlisted teams</p>
             <h2 className="h-display mt-2 text-4xl sm:text-5xl">Confirm your slot</h2>
           </div>
-          <div className="flex items-center gap-3 rounded-2xl border border-brand/30 bg-tint px-4 py-3">
+          {/* <div className="flex items-center gap-3 rounded-2xl border border-brand/30 bg-tint px-4 py-3">
             <span className="relative flex h-2.5 w-2.5"><span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-brand" /><span className="relative h-2.5 w-2.5 rounded-full bg-brand" /></span>
             <div className="leading-tight"><div className="font-mono text-[11px] text-stone">Payment deadline · {date} PKT</div><div className="font-mono text-sm font-semibold">{label || "\u00A0"}</div></div>
-          </div>
+          </div> */}
         </div>
 
         {/* stepper */}
@@ -49,7 +49,7 @@ export default function ConfirmSlot({ wa }: { wa: string }) {
                   <svg width="26" height="26" viewBox="0 0 24 24" {...S}>{s.icon}</svg>
                   <span className="absolute -right-2 -top-2 flex h-6 w-6 items-center justify-center rounded-full bg-brand font-mono text-xs font-bold text-white">{i + 1}</span>
                 </motion.div>
-                <h3 className="font-display text-2xl uppercase tracking-wide md:mt-5">{s.t}</h3>
+                <h3 className="font-display text-xl uppercase tracking-wide md:mt-5">{s.t}</h3>
               </div>
               <p className="mt-3 text-sm font-light leading-relaxed text-mist md:mx-auto md:max-w-[16rem]">{s.d}</p>
               <span className="mt-3 inline-block rounded-full border border-white/10 bg-white/[.04] px-3 py-1 font-mono text-[11px] text-stone transition group-hover:border-brand/50 group-hover:text-cream">{s.tag}</span>

@@ -31,12 +31,14 @@ export default function Home() {
             <span className="card !rounded-full px-5 py-2"><b className="text-brand">22 Oct: </b> Onsite Phase</span>
           </motion.div>
           <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ delay: 1.2 }} className="mt-9 flex flex-wrap gap-4">
-            <a href={LINKS.reg} target="_blank" className="btn btn-red">Register</a>
+            <button className="btn btn-red" disabled>
+              Register
+            </button>
             <a href="#how" className="btn btn-ghost">How it works</a>
           </motion.div>
         </div>
-        
-    <ProblemPreview />
+
+        <ProblemPreview />
       </div>
     </section>
 
@@ -53,17 +55,36 @@ export default function Home() {
 
     {/* HOW */}
     <section id="how" className="border-y border-white/5 bg-char px-5 py-28"><div className="mx-auto max-w-6xl"><Heading title="How it works" />
-      <div className="grid gap-5 md:grid-cols-4">{steps.map((s, i) => <Reveal key={s.t} delay={i * .1}><Card className="h-full p-7"><div className="mb-6 flex h-12 w-12 items-center justify-center rounded-xl bg-brand font-display text-2xl">{i + 1}</div><h3 className="font-display text-3xl uppercase">{s.t}</h3><p className="mt-2 text-sm text-mist">{s.d}</p></Card></Reveal>)}</div></div></section>
+      <div className="grid gap-5 md:grid-cols-4">{steps.map((s, i) => <Reveal key={s.t} delay={i * .1}><Card className="h-full p-7"><div className="mb-6 flex h-12 w-12 items-center justify-center rounded-xl bg-brand font-display text-2xl">{i + 1}</div><h3 className="font-display text-xl uppercase md:text-3xl">{s.t}</h3><p className="mt-2 text-sm text-mist">{s.d}</p></Card></Reveal>)}</div></div></section>
 
     {/* RULES + JUDGING */}
     <section className="mx-auto grid max-w-6xl gap-8 px-5 mt-12 lg:grid-cols-2">
-      <Reveal><Card className="h-full p-8">{HeadingStroked({ title: "Rules & eligibility" })}<ul className="space-y-4">{rules.map(r => <li key={r} className="flex gap-3 text-mist"><span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-brand" />{r}</li>)}</ul></Card></Reveal>
+      <Reveal>
+        <Card className="h-full p-8">
+          {HeadingStroked({ title: "Rules & eligibility" })}
+          <ul className="space-y-4">
+            {rules.map(r => (
+              <li key={r} className="flex gap-3 text-mist">
+                <span className="mt-2 h-2 w-2 shrink-0 rounded-full bg-brand" />
+                {r}
+              </li>
+            ))}
+          </ul>
+
+          <a
+            href="/guidelines"
+            className="mt-6 inline-flex items-center rounded-lg bg-brand px-5 py-3 text-sm font-semibold text-white transition hover:opacity-80"
+          >
+            View Full Guidelines →
+          </a>
+        </Card>
+      </Reveal>
       <Reveal delay={.1}><Card className="h-full p-8">{HeadingStroked({ title: "Judging criteria" })}<div className="space-y-5">{judging.map(j => <div key={j.t}><div className="mb-1.5 flex justify-between text-sm"><span>{j.t}</span><span className="font-mono text-brand">{j.v}%</span></div><div className="h-2 overflow-hidden rounded-full bg-surf"><motion.div initial={{ width: 0 }} whileInView={{ width: `${j.v * 3}%` }} viewport={{ once: true }} transition={{ duration: 1.1, ease: "easeOut" }} className="h-full rounded-full bg-gradient-to-r from-crimson to-brand" /></div></div>)}</div></Card></Reveal>
     </section>
 
     {/* TIMELINE */}
     <section className="mx-auto max-w-4xl px-5 py-36"><Heading title="Timeline" />
-      <div className="relative border-l-2 border-crimson pl-8">{timeline.map((t, i) => <Reveal key={t.t} delay={i * .05} className="relative mb-10 last:mb-0"><span className="absolute -left-[41px] top-2 h-4 w-4 rounded-full bg-brand shadow-[0_0_0_6px_rgba(224,32,26,.2)]" /><div className="font-mono text-sm text-brand">{t.d}</div><h3 className="font-display text-stroke-white text-4xl uppercase">{t.t}</h3><p className="text-mist">{t.s}</p></Reveal>)}</div></section>
+      <div className="relative border-l-2 border-crimson pl-8">{timeline.map((t, i) => <Reveal key={t.t} delay={i * .05} className="relative mb-10 last:mb-0"><span className="absolute -left-[41px] top-2 h-4 w-4 rounded-full bg-brand shadow-[0_0_0_6px_rgba(224,32,26,.2)]" /><div className="font-mono text-sm text-brand">{t.d}</div><h3 className="font-display text-stroke-white text-3xl uppercase">{t.t}</h3><p className="text-mist">{t.s}</p></Reveal>)}</div></section>
 
 
     {/* PRIZES */}
@@ -75,6 +96,9 @@ export default function Home() {
         <motion.div initial={false} animate={{ height: open === i ? "auto" : 0 }} className="relative z-10 overflow-hidden"><p className="px-6 pb-6 text-mist">{f.a}</p></motion.div></div>)}</div></section>
 
     {/* CTA */}
-    <section className="px-5 pb-28"><Reveal><div className="relative mx-auto max-w-6xl overflow-hidden rounded-3xl border border-brand/40 bg-tint p-10 text-center sm:p-20"><div className="absolute left-1/2 top-0 h-60 w-[600px] -translate-x-1/2 rounded-full bg-brand/40 blur-[120px]" /><h2 className="h-display relative text-5xl sm:text-8xl">Code. Connect.<br /><span className="text-brand">Create your future.</span></h2><a href={LINKS.reg} target="_blank" className="btn btn-red relative mt-9">Register now</a></div></Reveal></section>
+    <section className="px-5 pb-28"><Reveal><div className="relative mx-auto max-w-6xl overflow-hidden rounded-3xl border border-brand/40 bg-tint p-10 text-center sm:p-20"><div className="absolute left-1/2 top-0 h-60 w-[600px] -translate-x-1/2 rounded-full bg-brand/40 blur-[120px]" /><h2 className="h-display relative text-5xl sm:text-8xl">Code. Connect.<br /><span className="text-brand">Create your future.</span></h2>
+      <button className="btn btn-red mt-4" disabled>
+        Registerations are Closed
+      </button></div></Reveal></section>
   </main>;
 }

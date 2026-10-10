@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link"; import { usePathname } from "next/navigation"; import { motion } from "framer-motion"; import { useState } from "react";
 import { LINKS } from "@/lib/data";
-const nav = [["Home", "/"], ["Teams", "/teams"], ["Competition", "/competition"], ["Top 12", "/top-12"], ["Organizers", "/organizers"]];
+const nav = [["Home", "/"], ["Teams", "/teams"],["Guidelines", "/guidelines"], ["Competition", "/competition"], ["Top 12", "/top-12"], ["Organizers", "/organizers"]];
 export default function Navbar() {
   const p = usePathname(); const [open, setOpen] = useState(false);
   return <header className="fixed inset-x-0 top-0 z-50 border-b border-white/5 bg-ink/70 backdrop-blur-xl">
@@ -11,6 +11,6 @@ export default function Navbar() {
         <a href={LINKS.reg} target="_blank" className="btn btn-red ml-3 !px-5 !py-2 !text-base">Register</a></nav>
       <button aria-label="Menu" onClick={() => setOpen(!open)} className="flex h-10 w-10 flex-col items-center justify-center gap-1.5 md:hidden"><span className={`h-0.5 w-6 bg-cream transition ${open ? "translate-y-2 rotate-45" : ""}`} /><span className={`h-0.5 w-6 bg-cream transition ${open ? "opacity-0" : ""}`} /><span className={`h-0.5 w-6 bg-cream transition ${open ? "-translate-y-2 -rotate-45" : ""}`} /></button>
     </div>
-    {open && <div className="flex flex-col gap-1 border-t border-white/5 bg-ink px-5 py-4 md:hidden">{nav.map(([n, h]) => <Link key={h} href={h} onClick={() => setOpen(false)} className={`py-3 font-display text-3xl ${p === h ? "text-brand" : ""}`}>{n}</Link>)}</div>}
+    {open && <div className="flex flex-col gap-1 border-t border-white/5 bg-ink px-5 py-4 md:hidden">{nav.map(([n, h]) => <Link key={h} href={h} onClick={() => setOpen(false)} className={`py-3 text-md text-stroke-white ${p === h ? "text-brand" : ""}`}>{n}</Link>)}</div>}
   </header>;
 }

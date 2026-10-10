@@ -15,7 +15,7 @@ export default function Footer() {
               CODE//CONNECT'26
             </p>
 
-            <h2 className="font-display text-4xl uppercase tracking-wide text-cream sm:text-5xl">
+            <h2 className="font-display text-2xl uppercase tracking-wide text-cream sm:text-4xl">
               Vibe Coding
               <span className="text-brand"> Hackathon</span>
             </h2>
@@ -95,7 +95,7 @@ export default function Footer() {
             © 2026 CODE//CONNECT'26 · All rights reserved.
           </p>
 
-          <p className="font-mono text-xs text-stone">
+          <p className="font-mono text-sm text-stone">
             Developed by{" "}
             <a
               href="https://www.linkedin.com/in/azaan-mehtab-khan/"
