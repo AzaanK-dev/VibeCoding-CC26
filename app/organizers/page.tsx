@@ -19,14 +19,14 @@ const groups: Group[] = [
   },
   {
     id: "supervisors", title: "Advisors", tag: "Guiding the vision", linkedin: false, members: [
-      { name: "Sir Khalid Jamal", role: "Position / Title" },
-      { name: "Miss Humera Azam", role: "Position / Title" },
+      { name: "Sir Khalid Jamal", role: "Event Supervisor"}, //photo:"https://res.cloudinary.com/dttmiez4n/image/upload/v1791716599/Screenshot_2026-10-11_160229_gynroy.png"},
+      { name: "Miss Humera Azam", role: "Event Coordinator"}, //photo:"https://res.cloudinary.com/dttmiez4n/image/upload/v1791717226/WhatsApp_Image_2026-10-11_at_4.12.32_PM_1_ipnwsp.jpg" },
     ]
   },
   {
     id: "leads", title: "Heads", tag: "Leading the execution", linkedin: true, members: [
-      { name: "Azaan Mehtab Khan", role: "Position / Title", linkedin: L + "azaan-mehtab-khan" },
-      { name: "Sharjeel Ahmed", role: "Position / Title", linkedin: L + "sharjeel-ahmed-7b2300380" },
+      { name: "Azaan Mehtab Khan", role: "Organizing Head", linkedin: L + "azaan-mehtab-khan", photo: "https://res.cloudinary.com/dttmiez4n/image/upload/v1791718677/WhatsApp_Image_2026-10-11_at_4.37.19_PM_awlklg.jpg"},
+      { name: "Sharjeel Ahmed", role: "Management Head", linkedin: L + "sharjeel-ahmed-7b2300380", photo:"https://res.cloudinary.com/dttmiez4n/image/upload/v1791715740/WhatsApp_Image_2026-10-11_at_2.46.27_PM_rkdxkt.jpg"},
     ]
   },
   // {
@@ -51,7 +51,7 @@ function Person({ m, showLinkedIn }: { m: Member; showLinkedIn: boolean }) {
       <div className="relative z-10 flex items-center gap-4 p-3 sm:gap-5 sm:p-4">
         <div className="relative h-36 w-32 shrink-0 overflow-hidden rounded-xl bg-gradient-to-br from-tint via-surf to-ink">
           {m.photo
-            ? <img src={m.photo} alt={m.name} className="h-full w-full object-cover grayscale transition duration-500 group-hover:scale-105 group-hover:grayscale-0" />
+            ? <img src={m.photo} alt={m.name} className="h-full w-full object-cover" />
             : <div className="flex h-full items-center justify-center font-display text-4xl text-stroke transition duration-500 group-hover:text-brand/80 sm:text-5xl">{initials}</div>}
           <span className="absolute inset-x-0 bottom-0 h-0.5 bg-gradient-to-r from-brand to-crimson" />
         </div>
