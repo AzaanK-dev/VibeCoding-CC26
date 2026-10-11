@@ -9,23 +9,23 @@ export const rulesIntro =
   "Vibe Coding Hackathon is a 36-hour build sprint focused on shipping working products. Read the rules before starting. Participation means accepting these guidelines.";
 
 export const keyFacts = [
-  { k: "Problems released", v: "17 Oct · 9:00 AM" },
-  { k: "Submission deadline", v: "18 Oct · 9:00 PM" },
+  { k: "Problems released", v: "17 Oct · 10:00 AM" },
+  { k: "Submission deadline", v: "18 Oct · 10:00 PM" },
   { k: "Build time", v: "36 hours" },
   { k: "Late commits", v: "Disqualified" },
 ];
 
 export const rulesSections: Section[] = [
   { id: "timeline", title: "Hackathon timeline", summary: "Release, deadline and total time", items: [
-    "The problem statements will be released online at 9:00 AM on 17 October 2026.",
-    "Teams must submit their complete projects before 9:00 PM on 18 October 2026.",
+    "The problem statements will be released online at 10:00 AM on 17 October 2026.",
+    "Teams must submit their complete projects before 10:00 PM on 18 October 2026.",
     "The total development time is 36 hours.",
     "All submissions must be completed within the given deadline. Late submissions will not be accepted.",
   ] },
   { id: "github", title: "GitHub & commit policy", summary: "Repository and commit history", items: [
     "Every team must submit a valid GitHub repository link containing the project's source code.",
     "The repository must include the project's commit history.",
-    "Any Git commit made after 9:00 PM on 18 October 2026 will result in disqualification.",
+    "Any Git commit made after 10:00 PM on 18 October 2026 will result in disqualification.",
     "Teams are advised to push their final code and verify repository accessibility before the deadline.",
     "The submitted repository must belong to the participating team or be accessible to the organizers and judges.",
   ] },
