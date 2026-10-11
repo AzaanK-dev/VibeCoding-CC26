@@ -31,6 +31,9 @@ export default function Footer() {
                   <a href="/teams" className="text-stone transition-colors hover:text-cream">
                     Teams
                   </a>
+                  <a href="/guidelines" className="text-stone transition-colors hover:text-cream">
+                    Guidelines
+                  </a>
                   <a href="/competition" className="text-stone transition-colors hover:text-cream">
                     Competition
                   </a>
