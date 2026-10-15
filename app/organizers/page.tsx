@@ -12,15 +12,15 @@ const L = "https://www.linkedin.com/in/";
 const groups: Group[] = [
   {
     id: "judges", title: "Jury", tag: "Evaluating the builds", linkedin: false, members: [
-      { name: "TBA", role: "Position / Title" },
+      { name: "M Arbab Hussain Siddique", role: "Senior Software Engineer at Folio3", photo: "https://res.cloudinary.com/dttmiez4n/image/upload/v1792081056/WhatsApp_Image_2026-10-15_at_9.15.29_PM_kmwhxl.jpg" },
       { name: "TBA", role: "Position / Title" },
       { name: "TBA", role: "Position / Title" },
     ]
   },
   {
     id: "supervisors", title: "Advisors", tag: "Guiding the vision", linkedin: false, members: [
-      { name: "Sir Khalid Jamal", role: "Event Supervisor"}, //photo:"https://res.cloudinary.com/dttmiez4n/image/upload/v1791716599/Screenshot_2026-10-11_160229_gynroy.png"},
-      { name: "Miss Humera Azam", role: "Event Coordinator"}, //photo:"https://res.cloudinary.com/dttmiez4n/image/upload/v1791717226/WhatsApp_Image_2026-10-11_at_4.12.32_PM_1_ipnwsp.jpg" },
+      { name: "Sir Khalid Jamal", role: "Event Supervisor", photo: "https://res.cloudinary.com/dttmiez4n/image/upload/v1791716599/Screenshot_2026-10-11_160229_gynroy.png" },
+      { name: "Miss Humera Azam", role: "Event Coordinator", photo: "https://res.cloudinary.com/dttmiez4n/image/upload/v1791717226/WhatsApp_Image_2026-10-11_at_4.12.32_PM_1_ipnwsp.jpg" },
     ]
   },
   {

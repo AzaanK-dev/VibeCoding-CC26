@@ -9,30 +9,29 @@ export const DATES = {
   end: "2026-10-18T10:00:00+05:00",         // timer = 0 -> submissions open
   paymentDeadline: "2026-10-15T23:59:00+05:00",
 };
-export const FORCE_FINALIZED = false; // true = always show "Finalized Teams"
+export const FORCE_FINALIZED = true; // true = always show "Finalized Teams"
 // Testing: set NEXT_PUBLIC_PHASE_OVERRIDE=before|live|ended
 
 export const teams = [
-  { name: "Byte Busters", uni: "UBIT, University of Karachi" },
-  { name: "Null Pointers", uni: "NED University" },
-  { name: "Stack Smashers", uni: "FAST-NUCES Karachi" },
-  { name: "Git Happens", uni: "IBA Karachi" },
-  { name: "Ctrl+Alt+Win", uni: "UBIT, University of Karachi" },
-  { name: "Vibe Coders", uni: "Szabist Karachi" },
-  { name: "Vibe Coders", uni: "Szabist Karachi" },
-  { name: "Vibe Coders", uni: "Szabist Karachi" },
-  { name: "Vibe Coders", uni: "Szabist Karachi" },
-  { name: "Vibe Coders", uni: "Szabist Karachi" },
-  { name: "Vibe Coders", uni: "Szabist Karachi" },
-  { name: "Vibe Coders", uni: "Szabist Karachi" },
-  { name: "Vibe Coders", uni: "Szabist Karachi" },
-  { name: "Vibe Coders", uni: "Szabist Karachi" },
-  { name: "Vibe Coders", uni: "Szabist Karachi" },
-  { name: "Vibe Coders", uni: "Szabist Karachi" },
-  { name: "Vibe Coders", uni: "Szabist Karachi" },
-  { name: "Vibe Coders", uni: "Szabist Karachi" },
-  { name: "Vibe Coders", uni: "Szabist Karachi" },
-  { name: "Vibe Coders", uni: "Szabist Karachi" },
+  { name: "Hexabytes", uni: "FAST NUCES KARACHI" },
+  { name: "Khubsoorat Shklen", uni: "NED University of Engineering and Technology" },
+  { name: "Maple_X", uni: "Muhammad Ali Jinnah University" },
+  { name: "Byte Alpha's", uni: "UBIT, University of Karachi" },
+  { name: "Coding Hunters", uni: "DHA Suffa University" },
+  { name: "Nex Gen", uni: "Iqra University" },
+  { name: "VibeBuilders", uni: "UBIT, University of Karachi" },
+  { name: "Bug beaters", uni: "Muhammad Ali Jinnah University" },
+  { name: "Nova Strike", uni: "UBIT, University of Karachi" },
+  { name: "Token Burners", uni: "Sindh Madressatul Islam University" },
+  { name: "Byte Forge", uni: "UBIT, University of Karachi" },
+  { name: "Noobies", uni: "FAST NUCES Karachi" },
+  { name: "Aerostack", uni: "Sindh Madressatul Islam University" },
+  { name: "Red John", uni: "UBIT, University of Karachi" },
+  { name: "Crimson Nova", uni: "DHA Suffa University" },
+  { name: "Code Benders", uni: "UBIT, University of Karachi" },
+  { name: "Bitwise", uni: "NED University of Engineering and Technology" },
+  { name: "Zyphora", uni: "UBIT, University of Karachi" },
+  { name: "CopyCoders", uni: "UBIT, University of Karachi" },
 ];
 
 export const problems = [

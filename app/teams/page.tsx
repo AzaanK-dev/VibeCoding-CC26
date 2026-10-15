@@ -32,7 +32,7 @@ export default function Teams() {
                 className="group flex items-center gap-4 py-4 transition-all duration-300 hover:bg-white/[0.03] sm:gap-6"
               >
                 <span className="w-8 shrink-0 font-mono text-sm text-stone/60 sm:w-10 sm:text-base">
-                  {String(i + 1).padStart(2, "0")}
+                  #T{String(i + 1).padStart(2, "0")}
                 </span>
 
                 <div className="flex h-9 w-9 shrink-0 items-center justify-center rounded-lg border border-brand/30 bg-brand/10 font-display text-lg text-brand transition-all duration-300 group-hover:border-brand group-hover:bg-brand group-hover:text-cream">
