@@ -32,7 +32,7 @@ export const rulesSections: Section[] = [
   { id: "ai", title: "AI tools & development", summary: "What you can and cannot use", items: [
     "All vibe coding tools, AI coding assistants, frameworks, libraries, and programming languages are allowed.",
     "There are no restrictions on the technology stack or choice of development tools.",
-    "Teams may use AI tools to generate, modify, debug, and improve their code.",
+    "Teams may use AI tools to assist, modify, debug, and improve their code.",
     "Using existing projects, pre-built solutions, or previously developed code as the submitted product is strictly prohibited.",
     "Starter templates and third-party libraries may be used only where they do not violate the requirement to build the solution from scratch.",
     "Teams must be able to explain their implementation and demonstrate an understanding of their submitted product.",

@@ -13,7 +13,7 @@ const groups: Group[] = [
   {
     id: "judges", title: "Jury", tag: "Evaluating the builds", linkedin: false, members: [
       { name: "M Arbab Hussain Siddique", role: "Senior Software Engineer at Folio3", photo: "https://res.cloudinary.com/dttmiez4n/image/upload/v1792081056/WhatsApp_Image_2026-10-15_at_9.15.29_PM_kmwhxl.jpg" },
-      { name: "TBA", role: "Position / Title" },
+      { name: "Muhammad Amas", role: "Software Engineer at Eplanet Global", photo: "https://res.cloudinary.com/dttmiez4n/image/upload/v1792241108/WhatsApp_Image_2026-10-17_at_5.42.12_PM_czkrpc.jpg" },
       { name: "TBA", role: "Position / Title" },
     ]
   },
