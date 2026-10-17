@@ -15,10 +15,36 @@ export default function Competition() {
       />
     </div>  <section className="mx-auto max-w-6xl px-5 py-16">
       <Reveal><div className="mb-3 flex items-center gap-3"><span className={`h-3 w-3 rounded-full ${phase === "live" ? "animate-ping bg-brand" : "bg-stone"}`} /><span className="font-mono text-sm text-mist">{label}</span></div>
-        {phase === "ended" ? <div className="card !transform-none p-10 font-display text-6xl text-brand sm:text-8xl">00:00:00 · Submissions open</div> : phase && <Countdown target={phase === "before" ? DATES.start : DATES.end} />}</Reveal>
+        {phase === "ended" ? <div className="bg-red-700 rounded-3xl !transform-none p-10 font-display text-2xl text-white  sm:text-5xl">00:00:00 <br /> Scroll Down to Submissions</div> : phase && <Countdown target={phase === "before" ? DATES.start : DATES.end} />}</Reveal>
 
-      <h2 className="h-display mb-8 mt-24 text-3xl md:text-5xl">Problem statements</h2>
-      <p className={`mt-3 max-w-md text-white/85`}>
+      <div className="mt-24 flex flex-col items-start gap-5 sm:flex-row sm:items-center sm:justify-between sm:gap-4">
+        <h2 className="h-display text-3xl md:text-5xl">
+          Problem statements
+        </h2>
+
+        {phase !== "before" && phase !== null && (<a
+          href="/problem-statements.pdf"
+          download
+          className="group inline-flex w-full items-center justify-center gap-3 rounded-xl bg-brand px-6 py-3.5 font-bold text-white shadow-lg shadow-brand/25 ring-1 ring-brand transition-all duration-300 hover:shadow-xl hover:shadow-brand/40 active:translate-y-0 sm:w-auto"
+        >
+          <svg
+            width="20"
+            height="20"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            strokeWidth="2"
+            className="transition-transform duration-300 group-hover:translate-y-0.5"
+          >
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+            <path d="m7 10 5 5 5-5" />
+            <path d="M12 15V3" />
+          </svg>
+          View in Detail
+        </a>)}  
+      </div>
+
+      <p className={`my-3 max-w-md text-white/85`}>
         Choose 1 of the 3 from below. Statements will be revealed at <b>17 Oct, 10:00 am</b>.
       </p>
       <div className="grid gap-5 md:grid-cols-3">{problems.map((p, i) => {

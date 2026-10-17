@@ -6,14 +6,16 @@ export const LINKS = {
 };
 export const DATES = {
   start: "2026-10-17T10:00:00+05:00",       // problems revealed, timer starts
+  // start: "2026-10-16T22:13:00+05:00",
   end: "2026-10-18T10:00:00+05:00",         // timer = 0 -> submissions open
+  // end: "2026-10-16T22:51:00+05:00",
   paymentDeadline: "2026-10-15T23:59:00+05:00",
 };
 export const FORCE_FINALIZED = true; // true = always show "Finalized Teams"
 // Testing: set NEXT_PUBLIC_PHASE_OVERRIDE=before|live|ended
 
 export const teams = [
-  { name: "Hexabytes", uni: "FAST NUCES KARACHI" },
+  { name: "Tech Titans", uni: "UBIT, University of Karachi" },
   { name: "Khubsoorat Shklen", uni: "NED University of Engineering and Technology" },
   { name: "Maple_X", uni: "Muhammad Ali Jinnah University" },
   { name: "Byte Alpha's", uni: "UBIT, University of Karachi" },
@@ -35,11 +37,10 @@ export const teams = [
 ];
 
 export const problems = [
-  { id: "A", domain: "Domain One", brief: "Placeholder. Replace with the problem statement revealed at start." },
-  { id: "B", domain: "Domain Two", brief: "Placeholder. Replace with the problem statement revealed at start." },
-  { id: "C", domain: "Domain Three", brief: "Placeholder. Replace with the problem statement revealed at start." },
+  { id: "A", domain: "Disaster Response", brief: "During floods, heatwaves and other disasters, warnings may not reach everyone, while rescue teams, vehicles, shelters and medical supplies remain limited. How can technology identify who needs help most and coordinate resources to reach them before the situation becomes critical?" },
+  { id: "B", domain: "Threat Prevention", brief: "Cameras and sensors can record theft, violence, accidents or fires, but by the time a human notices the footage and responds, it may already be too late. How can intelligent technology detect a developing threat and act quickly and proactively to prevent or reduce harm?" },
+  { id: "C", domain: "Misinformation Control", brief: "During elections or health crises, false information spreads rapidly through encrypted WhatsApp groups whose content cannot be seen. How can a system effectively slow its spread without censorship, while keeping user privacy fully intact and resisting sophisticated adversarial users?" },
 ];
-
 export const top10 = [
   {
     id: "T01",
