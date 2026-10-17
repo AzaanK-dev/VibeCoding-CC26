@@ -31,9 +31,10 @@ export const teams = [
   { name: "Red John", uni: "UBIT, University of Karachi" },
   { name: "Crimson Nova", uni: "DHA Suffa University" },
   { name: "Code Benders", uni: "UBIT, University of Karachi" },
-  { name: "Bitwise", uni: "NED University of Engineering and Technology" },
   { name: "Zyphora", uni: "UBIT, University of Karachi" },
+  { name: "Bitwise", uni: "NED University of Engineering and Technology" },
   { name: "CopyCoders", uni: "UBIT, University of Karachi" },
+  { name: "Recursive Minds", uni: "UBIT, University of Karachi" },
 ];
 
 export const problems = [
