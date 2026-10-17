@@ -7,7 +7,7 @@ export const LINKS = {
 export const DATES = {
   start: "2026-10-17T10:00:00+05:00",       // problems revealed, timer starts
   // start: "2026-10-16T22:13:00+05:00",
-  end: "2026-10-18T10:00:00+05:00",         // timer = 0 -> submissions open
+  end: "2026-10-18T22:00:00+05:00",         // timer = 0 -> submissions open
   // end: "2026-10-16T22:51:00+05:00",
   paymentDeadline: "2026-10-15T23:59:00+05:00",
 };
