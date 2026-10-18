@@ -1,7 +1,7 @@
 // ===== EDIT ME: all content & dates live here =====
 export const LINKS = {
   reg: "https://codeconnect26-registration.vercel.app",
-  submit: "https://vibe-coding-submission.vercel.app",
+  submit: "https://vibe-coding-submissions.vercel.app/",
   waNumber: "923214158518", // payment screenshots go here
 };
 export const DATES = {
