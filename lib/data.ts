@@ -43,78 +43,18 @@ export const problems = [
   { id: "C", domain: "Misinformation Control", brief: "During elections or health crises, false information spreads rapidly through encrypted WhatsApp groups whose content cannot be seen. How can a system effectively slow its spread without censorship, while keeping user privacy fully intact and resisting sophisticated adversarial users?" },
 ];
 export const top10 = [
-  {
-    id: "T01",
-    name: `Team Name Placeholder `,
-    uni: "University TBA",
-    project: "Project Title TBA",
-  },
-  {
-    id: "T01",
-    name: `Team Name Placeholder `,
-    uni: "University TBA",
-    project: "Project Title TBA",
-  },
-  {
-    id: "T01",
-    name: `Team Name Placeholder `,
-    uni: "University TBA",
-    project: "Project Title TBA",
-  },
-  {
-    id: "T01",
-    name: `Team Name Placeholder `,
-    uni: "University TBA",
-    project: "Project Title TBA",
-  },
-  {
-    id: "T01",
-    name: `Team Name Placeholder `,
-    uni: "University TBA",
-    project: "Project Title TBA",
-  },
-  {
-    id: "T01",
-    name: `Team Name Placeholder `,
-    uni: "University TBA",
-    project: "Project Title TBA",
-  },
-  {
-    id: "T01",
-    name: `Team Name Placeholder `,
-    uni: "University TBA",
-    project: "Project Title TBA",
-  },
-  {
-    id: "T01",
-    name: `Team Name Placeholder `,
-    uni: "University TBA",
-    project: "Project Title TBA",
-  },
-  {
-    id: "T01",
-    name: `Team Name Placeholder `,
-    uni: "University TBA",
-    project: "Project Title TBA",
-  },
-  {
-    id: "T01",
-    name: `Team Name Placeholder `,
-    uni: "University TBA",
-    project: "Project Title TBA",
-  },
-  {
-    id: "T01",
-    name: `Team Name Placeholder `,
-    uni: "University TBA",
-    project: "Project Title TBA",
-  },
-  {
-    id: "T01",
-    name: `Team Name Placeholder `,
-    uni: "University TBA",
-    project: "Project Title TBA",
-  },
+  { id: "T02", name: "Khubsoorat Shklen", uni: "NED UET", project: "Nobody Left Behind" },
+  { id: "T03", name: "Maple_X", uni: "Muhammad Ali Jinnah University", project: "Isolation Clock" },
+  { id: "T04", name: "Byte Alpha's", uni: "UBIT, University of Karachi", project: "Nigehban" },
+  { id: "T06", name: "Nex Gen", uni: "Iqra University", project: "ReliefOs" },
+  { id: "T08", name: "Bug beaters", uni: "Muhammad Ali Jinnah University", project: "Veritus / Verifi" },
+  { id: "T10", name: "Token Burners", uni: "Sindh Madressatul Islam University", project: "PEHRADAR" },
+  { id: "T12", name: "Noobies", uni: "FAST NUCES Karachi", project: "Flood trace" },
+  { id: "T13", name: "Aerostack", uni: "Sindh Madressatul Islam University", project: "Nigehbaan" },
+  { id: "T15", name: "Crimson Nova", uni: "DHA Suffa University", project: "Vantage Grid" },
+  { id: "T16", name: "Code Benders", uni: "UBIT, University of Karachi", project: "Pulse" },
+  { id: "T17", name: "Zyphora", uni: "UBIT, University of Karachi", project: "Resqlink" },
+  { id: "T18", name: "Bitwise", uni: "NED UET", project: "RAABTA" },
 ];
 
 export const why = [
